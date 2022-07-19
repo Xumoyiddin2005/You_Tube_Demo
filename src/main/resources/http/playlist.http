@@ -1,0 +1,54 @@
+POST http://localhost:8080/api/v1/playlist/public/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc5NzQ2OTUsImV4cCI6MTY1Nzk3ODI5NSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjJ9.1pRPX7zztmCU3u4m0ovXaSfJNfmqbDFQ_ajJrOGMkYY
+Content-Type: application/json
+
+{
+  "name": "playlist 2",
+  "channelId": "8a8a83f8820706f10182070b823b0000",
+  "order": 1,
+  "previewId": "4e1d3061-31f2-4a0d-812f-e078d3c4280b"
+}
+
+###Get User Playlist
+GET http://localhost:8080/api/v1/playlist/public/list/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc0Nzc5ODAsImV4cCI6MTY1NzQ4MTU4MCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.ZTzpAn8_qd6_849ktjtXqCc4jMifFG77MdG0raux4_Y
+
+###Playlist List By UserId
+GET http://localhost:8080/api/v1/playlist/adm/list/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc0ODE2NjcsImV4cCI6MTY1NzQ4NTI2NywiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.thn6O2b3JCapgqBPtGw0QgJ7FhbqACqXnNSsCCXtQhQ
+
+###update
+PUT http://localhost:8080/api/v1/playlist/public/update/402880ec81e8a9f60181e8aeb4570000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc1NDI5NTQsImV4cCI6MTY1NzU0NjU1NCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.nOqMa7H-XwQXuBZefaHomaid6GkdDTsOoQ38pSaPwM4
+Content-Type: application/json
+
+{
+  "name": "playlist 1",
+  "channelId": "402880ec81e86be10181e86c16ae0000",
+  "order": 2,
+  "previewId": "d86574fc-59ed-40ce-bb22-27ace82b7b73"
+}
+
+###change status
+PUT http://localhost:8080/api/v1/playlist/public/change/status/402880ec81e8a9f60181e8aeb4570000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc1NDI5NTQsImV4cCI6MTY1NzU0NjU1NCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.nOqMa7H-XwQXuBZefaHomaid6GkdDTsOoQ38pSaPwM4
+Content-Type: application/json
+
+{
+  "status": "ACTIVE"
+}
+
+###delete
+PUT http://localhost:8080/api/v1/playlist/public/delete/402880ec81e8a9f60181e8aeb4570000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc1NDI5NTQsImV4cCI6MTY1NzU0NjU1NCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.nOqMa7H-XwQXuBZefaHomaid6GkdDTsOoQ38pSaPwM4
+
+###pagination
+GET http://localhost:8080/api/v1/playlist/adm/pagination?size=5&page=0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc1NDYyMzEsImV4cCI6MTY1NzU0OTgzMiwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9._LG9j8jv0hbduRTF0T6qNxtgGetSfWK3AlQ1REwSnBA
+
+###get playlist list by channel id
+GET http://localhost:8080/api/v1/playlist/public/list_by_channel/402880ec81e86be10181e86c16ae0000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc1NDYyMzEsImV4cCI6MTY1NzU0OTgzMiwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9._LG9j8jv0hbduRTF0T6qNxtgGetSfWK3AlQ1REwSnBA
+###get by id
+GET http://localhost:8080/api/v1/playlist/402880ec81e8b0550181e8b124bb0000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc1NjMxNjEsImV4cCI6MTY1NzU2Njc2MSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.ry8euwPAKxeKlEyzkA2whj8vNja6aSWE25cH14OZo2o

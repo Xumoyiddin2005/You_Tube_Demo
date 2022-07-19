@@ -1,0 +1,40 @@
+PUT http://localhost:8080/api/v1/profile/change/password
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcxMDI3MTgsImV4cCI6MTY1NzEwNjMxOCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.h8GcRUPaOfgh85w5GMcoyQTSrr4vwvJFYFIWoGZ9cpQ
+Content-Type: application/json
+
+{
+  "password": "1234"
+}
+###
+PUT http://localhost:8080/api/v1/profile/change/username
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcxMDI1NzgsImV4cCI6MTY1NzEwNjE3OCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.j201MOU1xO-CemcTQ0xFRGkNMZtoh9enkXmjP3DkBbM
+
+Content-Type: application/json
+
+{
+  "username": "user"
+}
+###
+PUT http://localhost:8080/api/v1/profile/change/email
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcxMDMyNDYsImV4cCI6MTY1NzEwNjg0NiwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.X-tP5hFQ91S3kNiFEtnwad9VnSZL0OXiCXJuJJ3dfBM
+Content-Type: application/json
+
+{
+  "email": "bahodirmufid@gmail.com"
+}
+###
+GET http://localhost:8080/api/v1/profile/get_details
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcxMDMyNDYsImV4cCI6MTY1NzEwNjg0NiwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.X-tP5hFQ91S3kNiFEtnwad9VnSZL0OXiCXJuJJ3dfBM
+###
+POST http://localhost:8080/api/v1/profile/adm/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcxMDQxNDQsImV4cCI6MTY1NzEwNzc0NCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.PgtvvkBsNaGAWs6ucWexDQisLPy7gZxfOeV0CT6VzdU
+Content-Type: application/json
+
+{
+  "username": "kmwlkden",
+  "password": "kalla",
+  "email": "nvnlnv",
+  "role": "ROLE_MODERATOR",
+  "status": "ACTIVE",
+  "visible": true
+}

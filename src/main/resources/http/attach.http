@@ -1,0 +1,25 @@
+###create
+POST http://localhost:8080/api/v1/attach/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc5NzQ2OTUsImV4cCI6MTY1Nzk3ODI5NSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjJ9.1pRPX7zztmCU3u4m0ovXaSfJNfmqbDFQ_ajJrOGMkYY
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="image.jpg"
+
+< C:\Users\xumoy\OneDrive\Рабочий стол\image.jpg
+
+###get by id
+GET http://localhost:8080/api/v1/attach/6499c5ea-45a2-40c2-866a-fd871b540623
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczODI4NzcsImV4cCI6MTY1NzM4NjQ3NywiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.glGFSlH5_oImGsW_J8GcY-N4Ecy5BUk0WnwKjy90trU
+
+###download by id
+GET http://localhost:8080/api/v1/attach/download/6499c5ea-45a2-40c2-866a-fd871b540623
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczODI4NzcsImV4cCI6MTY1NzM4NjQ3NywiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.glGFSlH5_oImGsW_J8GcY-N4Ecy5BUk0WnwKjy90trU
+
+###delete
+DELETE http://localhost:8080/api/v1/attach/delete/6499c5ea-45a2-40c2-866a-fd871b540623
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczODY2NDcsImV4cCI6MTY1NzM5MDI0NywiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.O1VVzlvh4t8TuTRZHX3ttSIY8FmDYABNCvHMtLM78yk
+
+###pagination
+GET http://localhost:8080/api/v1/attach/adm/pagination?size=5&page=0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc0NTU5MzgsImV4cCI6MTY1NzQ1OTUzOCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.vrZ69ADJYqzmf86hA919Ng5RSNyjZkSMYRHlvEjaVdk

@@ -1,0 +1,10 @@
+POST http://localhost:8080/api/v1/playlist/video/public/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc0NjU4ODQsImV4cCI6MTY1NzQ2OTQ4NCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.HQ7vIJV8AKMa0w1nF25esvWDimZgQKRCw1tmn9v2zpA
+Content-Type: application/json
+
+{
+  "videoId": "402880ec81e89f590181e89fe9cc0001",
+  "playlistId": "8a8a83f8820706f1018207183a580003",
+  "order": 1,
+  "channelId": "8a8a83f8820706f10182070b823b0000"
+}

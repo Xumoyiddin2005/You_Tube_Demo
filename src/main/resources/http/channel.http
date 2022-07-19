@@ -1,0 +1,63 @@
+POST http://localhost:8080/api/v1/channel/public/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc5NzQ2OTUsImV4cCI6MTY1Nzk3ODI5NSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjJ9.1pRPX7zztmCU3u4m0ovXaSfJNfmqbDFQ_ajJrOGMkYY
+Content-Type: application/json
+
+{
+  "name": "channel 2",
+  "profileId": 1,
+  "photoId": "4e1d3061-31f2-4a0d-812f-e078d3c4280b",
+  "telegramUrl": "nwkjvn",
+  "instagramUrl": "nwkjvn",
+  "websiteUrl": "nwkjvn",
+  "status": "ACTIVE"
+}
+
+###update
+PUT http://localhost:8080/api/v1/channel/public/update/402880ec81e966bc0181e96868430000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc1MjgyNDMsImV4cCI6MTY1NzUzMTg0MywiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.-Kjkx51yUo9C9M3w7yYxb3wUXJ_-0KfVOkfCBtt7RDc
+Content-Type: application/json
+
+{
+  "name": "channel 2",
+  "telegramUrl": "nwkjvn",
+  "instagramUrl": "nwkjvn",
+  "websiteUrl": "nwkjvn"
+}
+
+###update photo
+PUT http://localhost:8080/api/v1/channel/public/banner/update/402880ec81e966bc0181e96868430000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc1Mjk2NjcsImV4cCI6MTY1NzUzMzI2NywiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.ov6cHXuQ-M5o2rFfYK_Lz6Dqm7WF_ZQ71k2N1S83jro
+Content-Type: application/json
+
+{
+  "attachId": "d86574fc-59ed-40ce-bb22-27ace82b7b73"
+}
+###update banner
+PUT http://localhost:8080/api/v1/channel/public/photo/update/402880ec81e966bc0181e96868430000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc1Mjk2NjcsImV4cCI6MTY1NzUzMzI2NywiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.ov6cHXuQ-M5o2rFfYK_Lz6Dqm7WF_ZQ71k2N1S83jro
+Content-Type: application/json
+
+{
+  "attachId": "d86574fc-59ed-40ce-bb22-27ace82b7b73"
+}
+###pagination
+GET http://localhost:8080/api/v1/channel/adm/pagination?size=5&page=0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc1MzAzNDYsImV4cCI6MTY1NzUzMzk0NiwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.pNClA6zg7WJCInuXg_FrHymwF5MHRajRCUnIIrBGiDk
+
+###get by id
+GET http://localhost:8080/api/v1/channel/402880ec81e966bc0181e96868430000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc1MzAzNDYsImV4cCI6MTY1NzUzMzk0NiwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.pNClA6zg7WJCInuXg_FrHymwF5MHRajRCUnIIrBGiDk
+
+###update channel's status
+PUT http://localhost:8080/api/v1/channel/change/status/402880ec81e966bc0181e96868430000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc1MzAzNDYsImV4cCI6MTY1NzUzMzk0NiwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.pNClA6zg7WJCInuXg_FrHymwF5MHRajRCUnIIrBGiDk
+Content-Type: application/json
+
+{
+  "status": "ACTIVE"
+}
+
+###user channel list
+GET http://localhost:8080/api/v1/channel/list/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc1MzI0ODcsImV4cCI6MTY1NzUzNjA4NywiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.4I7KuPJYhyXs-jkxLnOrMwr0jEWF_80AaDBEyW-FSDA
+

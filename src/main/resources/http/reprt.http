@@ -1,0 +1,14 @@
+POST http://localhost:8080/api/v1/report/adm/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc5NzQ2OTUsImV4cCI6MTY1Nzk3ODI5NSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjJ9.1pRPX7zztmCU3u4m0ovXaSfJNfmqbDFQ_ajJrOGMkYY
+
+{
+  "content": "tsrhbfjyf",
+  "entityId": "ashgfiagiu12oihjadsoih",
+  "type": "CHANNEL"
+}
+
+###
+
+GET http://localhost:8080/api/v1/report/adm/pagination?page=0&size=3
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc5NzczNTUsImV4cCI6MTY1Nzk4MDk1NSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjN9.e0yqQWJ8Z3QCx0aZsUN1-x3rv6Jy6_fz8HAnLMOXQgE

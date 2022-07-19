@@ -1,0 +1,25 @@
+###create
+POST http://localhost:8080/api/v1/category/adm/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc5NzYxNDQsImV4cCI6MTY1Nzk3OTc0NCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjN9.aS0S_KzPMlF3WhhMW2f82lFqR_hikGYf-RIt0dIrrbc
+Content-Type: application/json
+
+{
+  "name": "category 1"
+}
+
+###update
+PUT http://localhost:8080/api/v1/category/adm/update/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcyMjE4NzgsImV4cCI6MTY1NzIyNTQ3OCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.Eg_DcCriwY41nVAhL4Krj2RYvTRiQT1s8-3t2VsY9gQ
+Content-Type: application/json
+
+{
+  "name": "category 3"
+}
+
+###delete
+DELETE http://localhost:8080/api/v1/category/adm/delete/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcyMjE4NzgsImV4cCI6MTY1NzIyNTQ3OCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.Eg_DcCriwY41nVAhL4Krj2RYvTRiQT1s8-3t2VsY9gQ
+
+
+###list
+GET http://localhost:8080/api/v1/category/public/list

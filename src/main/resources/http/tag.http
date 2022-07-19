@@ -1,0 +1,26 @@
+###create
+POST http://localhost:8080/api/v1/tag/public/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc5NzYxNDQsImV4cCI6MTY1Nzk3OTc0NCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjN9.aS0S_KzPMlF3WhhMW2f82lFqR_hikGYf-RIt0dIrrbc
+Content-Type: application/json
+
+{
+  "name": "tag 5"
+}
+
+###update
+PUT http://localhost:8080/api/v1/tag/adm/update/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczODE0NDksImV4cCI6MTY1NzM4NTA0OSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.2VnKJRMrBISm_KdQlyr94_xmhclDzbj6l9cW37TAivk
+Content-Type: application/json
+
+{
+  "name": "tag 1"
+}
+
+###list
+GET http://localhost:8080/api/v1/tag/public/list
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczODE0NDksImV4cCI6MTY1NzM4NTA0OSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.2VnKJRMrBISm_KdQlyr94_xmhclDzbj6l9cW37TAivk
+
+###delete
+DELETE http://localhost:8080/api/v1/tag/adm/delete/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczODE0NDksImV4cCI6MTY1NzM4NTA0OSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.2VnKJRMrBISm_KdQlyr94_xmhclDzbj6l9cW37TAivk
+
