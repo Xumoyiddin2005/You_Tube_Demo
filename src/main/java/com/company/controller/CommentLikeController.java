@@ -9,10 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-// PROJECT NAME -> You_Tube_Demo
-// TIME -> 15:59
-// MONTH -> 07
-// DAY -> 13
+
 @RestController
 @RequestMapping("comment_like")
 public class CommentLikeController {
